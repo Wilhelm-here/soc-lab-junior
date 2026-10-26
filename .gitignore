@@ -1,0 +1,23 @@
+# гиперизоры и образы VM
+*.qcow2
+*.vmdk
+*.vdi
+*.ova
+*.ovf
+
+# сетевые дампы
+*.pcap
+*.pcapng
+
+# секреты
+secrets*
+*.key
+*.pem
+.env
+*password*
+
+# мусор ОС
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
