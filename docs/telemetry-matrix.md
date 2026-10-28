@@ -7,15 +7,15 @@
 |---|---|---|---|---|---|
 | Security | 4624 | успешный вход | | | тип логона важен |
 | Security | 4625 | неуспешный вход | | | нужно для T1110 |
-| Security | 4688 | создание процесса + cmdline | | | только после GPO |
+| Security | 4688 | создание процесса + cmdline | |да | только после GPO |
 | Security | 4698 | создание задачи | | | Other Object Access |
 | Security | 4720 | создание пользователя | | | |
-| Sysmon | 1 | процесс, cmdline, parent | | | |
+| Sysmon | 1 | процесс, cmdline, parent | | да| |
 | Sysmon | 3 | сетевые соединения | | | |
 | Sysmon | 11 | создание файла | | | |
 | Sysmon | 13 | запись в реестр | | | |
 | Sysmon | 10 | доступ к процессу (LSASS) | | | нужен ProcessAccess |
-| PowerShell | 4104 | script block | | | |
+| PowerShell | 4104 | script block | |да | |
 | Linux | auth.log | sshd, sudo | — | — | если есть Linux-жертва |
 
 ## Найденные gaps
