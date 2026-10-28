@@ -1,0 +1,14 @@
+﻿title: Suspicious Scheduled Task Creation
+id: 00000000-0000-0000-0000-000000000002
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4698
+    TaskName|startswith: '\'
+  filter_legit:
+    TaskName|startswith: '\Microsoft\Windows\'
+  condition: selection and not filter_legit
+level: medium
